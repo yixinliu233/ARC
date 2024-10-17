@@ -16,10 +16,7 @@ pip install --no-index torch-cluster -f https://pytorch-geometric.com/whl/torch-
 pip install --no-index torch-spline-conv -f https://pytorch-geometric.com/whl/torch-2.1.2+cu121.html
 pip install torch-geometric==2.3.1
 
-pip uninstall networkx -y
 pip install networkx==2.8.8
-pip uninstall dgl -y
-pip install dgl==0.9.0
 ```
 
 # Usage
