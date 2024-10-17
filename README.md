@@ -1,5 +1,6 @@
 # ARC
  This repository is the official implementation of "[ARC: A Generalist Graph Anomaly Detector with In-Context Learning](https://arxiv.org/pdf/2405.16771)", accepted by NeurIPS 2024.
+![pipeline](https://github.com/user-attachments/assets/0e0065dd-57c3-47a0-bbbe-ab95da9fe9c2)
 
 # Setup
 ```js/java/c#/text
