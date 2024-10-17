@@ -19,6 +19,13 @@ pip uninstall dgl -y
 pip install dgl==0.9.0
 ```
 
+# Usage
+Just run the script corresponding to the dataset and method you want. For instance:
+
+```js/java/c#/text
+python main.py --trial 5 --shot 10
+```
+
 # Cite
 If you compare with, build on, or use aspects of this work, please cite the following:
 
