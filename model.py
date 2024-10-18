@@ -44,8 +44,8 @@ class CrossAttn(nn.Module):
         super(CrossAttn, self).__init__()
         self.embedding_dim = embedding_dim
 
-        self.Wq = nn.Linear(embedding_dim, embedding_dim // 2)
-        self.Wk = nn.Linear(embedding_dim, embedding_dim // 2)
+        self.Wq = nn.Linear(embedding_dim, embedding_dim)
+        self.Wk = nn.Linear(embedding_dim, embedding_dim)
 
     def cross_attention(self, query_X, support_X):
         Q = self.Wq(query_X)  # query
