@@ -1,12 +1,12 @@
 {
   "model": "ARC",
-  "lr": 1e-4,
+  "lr": 1e-5,
   "drop_rate": 0,
   "h_feats": 1024,
   "num_prompt": 10,
   "num_hops": 2,
-  "weight_decay": 1e-4,
+  "weight_decay": 5e-5,
   "in_feats": 64,
-  "num_layers": 3,
+  "num_layers": 4,
   "activation": "ELU"
 }
