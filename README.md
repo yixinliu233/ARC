@@ -29,10 +29,10 @@ python main.py --trial 5 --shot 10
 If you compare with, build on, or use aspects of this work, please cite the following:
 
 ```js/java/c#/text
-@article{liu2024arc,
+@inproceedings{liu2024arc,
   title={ARC: A Generalist Graph Anomaly Detector with In-Context Learning},
   author={Liu, Yixin and Li, Shiyuan and Zheng, Yu and Chen, Qingfeng and Zhang, Chengqi and Pan, Shirui},
-  journal={arXiv preprint arXiv:2405.16771},
+  booktitle={Advances in Neural Information Processing Systems},
   year={2024}
 }
 ```
