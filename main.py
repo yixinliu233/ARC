@@ -43,15 +43,15 @@ model_config = read_json(model, args.shot, args.json_dir)
 if model_config is None:
     model_config = {
           "model": "ARC",
-          "lr": 7e-5,
+          "lr": 1e-5,
           "drop_rate": 0,
           "h_feats": 1024,
           "num_prompt": 10,
           "num_hops": 2,
-          "weight_decay": 5e-4,
+          "weight_decay": 5e-5,
           "in_feats": 64,
           "num_layers": 4,
-          "activation": "LeakyReLU"
+          "activation": "ELU"
         }
     print('use default model config')
 else:
@@ -68,7 +68,6 @@ model_config['in_feats'] = dims
 # Initialize dictionaries to store scores for each test dataset
 auc_dict = {}
 pre_dict = {}
-rec_dict = {}
 for t in range(args.trials):
     seed = t
     set_seed(seed)
@@ -84,7 +83,6 @@ for t in range(args.trials):
         if test_data_name not in auc_dict:
             auc_dict[test_data_name] = []
             pre_dict[test_data_name] = []
-            rec_dict[test_data_name] = []
         auc_dict[test_data_name].append(test_score['AUROC'])
         pre_dict[test_data_name].append(test_score['AUPRC'])
         print(f'Test on {test_data_name}, AUC is {auc_dict[test_data_name]}')
