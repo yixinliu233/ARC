@@ -82,7 +82,7 @@ class CrossAttn(nn.Module):
         # \tilde{H_q}
         query_tilde_embeds = self.cross_attention(query_embed, support_embed)
         # tilde_p_embeds: \tilde{H_q_i}, y_i == 1; tilde_n_embeds: \tilde{H_q_i}, y_i == 0;
-        tilde_p_embeds, tilde_n_embeds = query_tilde_embeds[:len(positive_indices)].detach(), query_tilde_embeds[
+        tilde_p_embeds, tilde_n_embeds = query_tilde_embeds[:len(positive_indices)], query_tilde_embeds[
                                                                                               len(positive_indices):]
 
         yp = torch.ones([len(negative_indices)]).to(y.device)
