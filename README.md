@@ -19,6 +19,7 @@ pip install torch-geometric==2.3.1
 ```
 
 # Usage
+Due to file size limitations, the tFinance dataset can be downloaded via [Google Drive](https://drive.google.com/file/d/1mvqGlqS1hvAGj9TkA0vIHjNDX3291Ugx/view?usp=sharing). 
 Just run the script corresponding to the dataset and method you want. For instance:
 
 ```js/java/c#/text
